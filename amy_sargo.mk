@@ -2,16 +2,20 @@
 TARGET_SCREEN_HEIGHT := 2220
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common amyROM stuff.
+$(call inherit-product, vendor/amy/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
 
 -include device/google/bonito/device-lineage.mk
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-amy \
+    $(LOCAL_PATH)/overlay-amy-sargo
+
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_sargo
+PRODUCT_NAME := amy_sargo
 PRODUCT_MODEL := Pixel 3a
 PRODUCT_BRAND := google
 

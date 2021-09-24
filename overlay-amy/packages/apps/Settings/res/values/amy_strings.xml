@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- amyROM Device Info -->
+    <string name="amy_device_platform_summary">SDM710</string>
+    <string name="amy_chipset_type_summary">Qualcomm Snapdragon 670</string>
+    <string name="amy_gpu_summary">Qualcomm Adreno 615</string>
+    <string name="amy_camera_mp_summary">13MP Camera</string>
+
+    <!-- amyROM Maintainer name -->
+    <string name="amyrom_maintainer">Amy Grace</string>
+</resources>
