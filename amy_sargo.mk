@@ -14,6 +14,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-amy \
     $(LOCAL_PATH)/overlay-amy-sargo
 
+TARGET_USES_BLUR := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := amy_sargo
 PRODUCT_MODEL := Pixel 3a
